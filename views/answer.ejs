@@ -2,7 +2,7 @@
     <h1>Answer</h1>
     <h4>Question: <strong><%= question %></strong></h4>
 
-    <pre class="body" style="height: 300px; resize: vertical;"><%= JSON.stringify(answerText, ["question","evidencelist"], 4) %></pre>
+    <pre class="body" style="height: 300px; resize: vertical;"><%= JSON.stringify(answerText, ["question"], 4) %></pre>
     <h2>Ask Another: </h2>
     <p>Ask Watson a question regarding Health + Wellness... </p>
     <form method="POST" action="/question" class="">
