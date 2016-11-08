@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Answer</h1>
+    <h4>Question: <strong><%= question %></strong></h4>
+
+    <pre class="body" style="height: 300px; resize: vertical;"><%= JSON.stringify(answerText, null, 4) %></pre>
+    <h2>Ask Another: </h2>
+    <p>Ask Watson a question regarding Health + Wellness... </p>
+    <form method="POST" action="/question" class="">
+        <div class="form-group">
+            <input type="text" name="questionText" class="form-control" id="questionText" placeholder="What do you want to know?">
+        </div>
+        <input type="submit" value="Ask Watson!" class="btn btn-primary" />
+    </form>
+</div>
+<script>
+
+</script>
