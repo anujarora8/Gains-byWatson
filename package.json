@@ -1,7 +1,7 @@
 {
   "name": "gains",
   "version": "1.0.0",
-  "description": "",
+  "description": "This README.md file is displayed on your project page. You should edit this  file to describe your project, including instructions for building and  running the project, pointers to the license under which you are making the  project available, and anything else you think would be useful for others to know.",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
@@ -14,7 +14,16 @@
     "ejs": "^1.0.0",
     "body-parser": "^1.0.0",
     "btoa": "*",
-    "request":"*"
-  }
-
+    "request": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nuwanperera/GAINS-byWatson.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nuwanperera/GAINS-byWatson/issues"
+  },
+  "homepage": "https://github.com/nuwanperera/GAINS-byWatson#readme"
 }
