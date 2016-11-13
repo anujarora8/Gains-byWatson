@@ -6,6 +6,6 @@
 </div>
 <script> 
 	alert('hi world');
-	document.cookie = "answerText="+JSON.stringify(answerText,null,4)+";";
+	document.cookie = "answerText="+btoa(JSON.stringify(answerText,null,4))+";";
 
 </script>
