@@ -5,7 +5,10 @@
     <pre class="body" style="height: 300px; resize: vertical;"><%= JSON.stringify(answerText, ["question", "evidencelist", "value", "title", "text"], 4)%></pre>
 </div>
 <script> 
-	var dataStore = $.cookie("answerText", JSON.stringify(answerText).data());
+	
+	var data = JSON.stringify(answerText);
+	var data = btoa(data);
+	write_cookie(data);
 	alert('hello world');
 
 </script>
