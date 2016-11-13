@@ -80,7 +80,7 @@ app.post('/question', function(req, res){
             'json' : questionEntity,
 
         }, function(error, response, body) {
-            res.render('index.html', {answerText: body, question: question});
+            res.render('answer', {answerText: body, question: question});
             res.end(JSON.stringify({status: 200}));
         });
     });
