@@ -5,5 +5,8 @@
     <pre class="body" style="height: 300px; resize: vertical;"><%= JSON.stringify(answerText, ["question", "evidencelist", "value", "title", "text"], 4)%></pre>
 </div>
 <script>
+	$.cookie('answerText',answerText);
+	var a = $.cookie('answerText');
+	alert(a);
 
 </script>
