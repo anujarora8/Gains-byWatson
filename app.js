@@ -63,7 +63,7 @@ app.post('/question', function(req, res){
         var questionEntity = {
             "question" : {
                 "evidenceRequest" : { // Ask Watson to return evidence
-                    "items" : 5 // Ask for 5 answers with evidence
+                    "items" : 1 // Ask for 5 answers with evidence
                 },
                 "questionText" : question // The question
             }
