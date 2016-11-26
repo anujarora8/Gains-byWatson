@@ -94,13 +94,12 @@
 
               <form>
 
-                <input class="form-control" placeholder="What supplement to take for health weight loss?" class = "icon-search" type="text" />
+                <input class="form-control" placeholder= "<%= question %>" class = "icon-search" type="text" />
                 <br><button type="submit" class="btn btn-default">Ask Question</submit>
               </form>
 
             </div>
 
-            <pre class="body" style="height: 300px; resize: vertical;"><%= JSON.stringify(answerText, ["question", "evidencelist", "value", "title", "text"], 4)%></pre>
 
           </div>
         </div>
@@ -111,32 +110,15 @@
         <div class="col-md-10  text-center fh5co-heading animate-box col-lg-9 col-lg-offset-2">
                  <h3><b>Ask your nutritional supplement question and we'll search over 5000 documents for the right choice.</b></h3>
                  <hr>
+                 <h3>Answer:</h3><p><%= JSON.stringify(answerText, ["question", "evidencelist", "value", "title", "text"], 4)%></p>
+
+
 
         </div>
 
       </div>
 
 </div>
-<div class="container">
-  <div class="col-md-10  text-center fh5co-heading animate-box col-lg-9 col-lg-offset-2">
-
-    <div class="col-md-4 moveUp2">
-      <img src = "images/cogIcon.png" style="padding-bottom:1em;">
-      <h4><b>Cognitive</b></h4>
-      <p>We use IBM Watson technology to intelligently select an answer for your question, giving you confident answers.</p>
-    </div>
-    <div class="col-md-4 moveUp2">
-      <img src = "images/docIcon.png" style="padding-bottom:1em;">
-      <h4><b>Trusted Documents</b></h4>
-      <p>Gains uses only trusted internet sources and research journals. No need to worry about that gym bro giving you advice.</p>
-    </div>
-    <div class="col-md-4 moveUp2">
-      <img src = "images/cloudIcon.png" style="padding-bottom:1em;">
-      <h4><b>Cloud Technology</b></h4>
-      <p>Our service is run on a cloud-based server, so you get your answers <i>really, really</i> fast.</p>
-    </div>
-    </div>
-  </div>
 
   </div>
 
