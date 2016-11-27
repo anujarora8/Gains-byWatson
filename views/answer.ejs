@@ -114,15 +114,19 @@
                     <% var x = JSON.stringify(answerText, ["question", "evidencelist", "value", "title", "text"]);
                       var y = JSON.parse(x);
                       console.dir(y);
-                      var test = y.question.evidencelist[0].text;
+                      var answer = y.question.evidencelist[0].text;
+                      var title = y.question.evidencelist[0].title;
                       var test2 = y.question.evidencelist[0].value;
-                      var test2 = double(test2)*100;
-                    %> <%= JSON.stringify(test,null) %>
+                    //  var test2 = double(test2)*100;
+
+                    %>
+                    <b><%= JSON.stringify(title, null)%></b><br>
+                    <%= JSON.stringify(answer,null) %>
 
 
                  </p>
 
-                 <h3> Confidence: <%= JSON.stringify(test2,null)%>
+                 <h3> Confidence: </h3>
 
 
         </div>
