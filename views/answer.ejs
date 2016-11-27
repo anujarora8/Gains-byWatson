@@ -93,8 +93,11 @@
 
               <form name="ask_watson"  method="post" action="/question">
 
-								<div><input type="text" class="form-control" style="background-color: white; padding: 12px 20px 12px 50px; background-image: url('images/search2.png'); background-size: 1.8em 1.8em;background-position: 10px 10px; background-repeat: no-repeat;"placeholder="<%= question %>" class = "icon-search" name="questionText" required></div>
-								<div align="right"><button type="submit" class="btn btn-primary btn-outline with-arrow" id="ask" value="click" >Ask!</button></div>
+							         <div>
+                         <input type="text" class="form-control" style="background-color: white; padding: 12px 20px 12px 50px; background-image: url('images/search2.png'); background-size: 1.8em 1.8em;background-position: 10px 10px; background-repeat: no-repeat;"placeholder="<%= question %>" class = "icon-search" name="questionText" required>
+                         <button type="submit" class="btn-primary" style="float: right"value="click" >Ask</submit>
+
+                      </div>
 
 							</form>
 
