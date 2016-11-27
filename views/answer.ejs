@@ -110,10 +110,10 @@
         <div class="col-md-10  text-center fh5co-heading animate-box col-lg-9 col-lg-offset-2">
                  <h3><b>Ask your nutritional supplement question and we'll search over 5000 documents for the right choice.</b></h3>
                  <hr>
-                 <h3>Answer:</h3><p> <% var answer = JSON.stringify(answerText, ["question", "evidencelist", "value","title", "text"]);
-                                        var x = JSON.parse(answer);
+                 <h3>Answer:</h3><p> <%= JSON.stringify(answerText, ["question", "evidencelist", "value","title", "text"]) %>
 
-                    %> <%= x.question.evidencelist.value[0] %> </p>
+
+                 </p>
 
 
 
