@@ -113,7 +113,7 @@
                  <h3>Answer:</h3><p> <% var answer = JSON.stringify(answerText, ["question", "evidencelist", "value","title", "text"]);
                                         var x = JSON.parse(answer);
 
-                    %> <%= x["question"] %> </p>
+                    %> <%= x.question.evidencelist[0].value %> </p>
 
 
 
