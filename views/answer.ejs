@@ -111,8 +111,9 @@
                  <h3><b>Ask your nutritional supplement question and we'll search over 5000 documents for the right choice.</b></h3>
                  <hr>
                  <h3>Answer:</h3><p> <% var answer = JSON.stringify(answerText, ["question", "evidencelist", "value","title", "text"]);
+                                        var x = JSON.parse(answer);
 
-                    %> <%= answer[0] %> </p>
+                    %> <%= x["question"] %> </p>
 
 
 
