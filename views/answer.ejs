@@ -125,11 +125,10 @@
                     <%= JSON.stringify(answer,null) %>
                     <% var percentage = Number(confidence);
                       percentage = percentage * 100;
-                      percentage.toFixed(0);
                             %>
                  </p>
 
-                 <b> Confidence: <%= percentage + "%" %></b>
+                 <b> Confidence: <%= percentage.toFixed(0) + "%" %></b>
 
 
         </div>
