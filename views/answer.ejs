@@ -116,7 +116,7 @@
                       console.dir(y);
                       var answer = y.question.evidencelist[0].text;
                       var title = y.question.evidencelist[0].title;
-                      var test2 = y.question.evidencelist[0].value;
+                      var confidence = y.question.evidencelist[0].value;
                     //  var test2 = double(test2)*100;
                       var title = JSON.stringify(title,null);
                       title.replace(/\"/g,"");
@@ -127,7 +127,7 @@
 
                  </p>
 
-                 <h3> Confidence: </h3>
+                 <b> Confidence: <%= JSON.stringify(confidence,null)% %></b>
 
 
         </div>
