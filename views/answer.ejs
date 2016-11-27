@@ -113,7 +113,7 @@
                  <h3>Answer:</h3><p> <%= JSON.stringify(answerText, ["question", "evidencelist", "value","title", "text"]) %>
                     <% var x = JSON.stringify(answerText, ["question", "evidencelist", "value", "title", "text"]);
                       var y = JSON.parse(x);
-                      console.log(y);%>
+                      console.log("Object: %O",y);%>
 
                  </p>
 
@@ -193,10 +193,7 @@
 <!-- MAIN JS -->
 <script src="js/main.js"></script>
 
-<script>
-	document.cookie = "answerText="+btoa(JSON.stringify(answerText,null,4))+";";
 
-</script>
 
 </body>
 </html>
