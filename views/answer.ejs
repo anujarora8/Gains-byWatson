@@ -118,9 +118,10 @@
                       var title = y.question.evidencelist[0].title;
                       var test2 = y.question.evidencelist[0].value;
                     //  var test2 = double(test2)*100;
-
+                      var title = JSON.stringify(title,null);
+                      title.replace(/\"/g,"");
                     %>
-                    <b><%= JSON.stringify(title, null)%></b><br>
+                    <b><%= title%></b><br>
                     <%= JSON.stringify(answer,null) %>
 
 
