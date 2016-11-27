@@ -12,6 +12,7 @@
 	<meta name="description" content="Finding nutrition supplements through cognitive computing with gains+" />
 	<meta name="keywords" content="gains, nutrition supplements, gains+, intelligent supplements, best supplement" />
 	<meta name="author" content="Michael Judd" />
+	<script src="../app.js"></script>
 
 
   	<!-- Facebook and Twitter integration -->
@@ -88,23 +89,19 @@
 		  <div class="container">
 	      	<div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box col-lg-7 col-lg-offset-3" style="margin-bottom: 80px;">
 								<!-- Form Start !-->
-					<form action="" method="" >
 
 					<div class="row">
 						<div class="col-md-12">
 
 							<div id = "searchbar" class="form-group has-feedback">
 
-								<form>
+								<form name="ask_watson"  method="post" action="/question">
+									<input type="text" style="background-color: white; padding: 12px 20px 12px 50px; background-image: url('images/search2.png'); background-size: 1.8em 1.8em;background-position: 10px 10px; background-repeat: no-repeat;"class="form-control" placeholder="What's the best supplement for strength training?" name="questionText" required/>
 
-									<input class="form-control" placeholder="What supplement to take for health weight loss?" class = "icon-search" type="text" />
-									<br><button type="submit" class="btn btn-default">Ask Question</submit>
 								</form>
-
 							</div>
 						</div>
 					</div>
-					</form>
 					</div>
 				<div class="row moveUp">
 
