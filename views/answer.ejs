@@ -95,7 +95,7 @@
               <form>
 
                 <input class="form-control" placeholder= "<%= question %>" class = "icon-search" type="text" />
-                <br><button type="submit" class="btn btn-default">Ask Question</submit>
+                <br>
               </form>
 
             </div>
@@ -112,7 +112,7 @@
                  <hr>
                  <h3>Answer:</h3><p> <% var answer = JSON.stringify(answerText, ["question", "evidencelist", "value","title", "text"]);
                                                                   var x = JSON.parse(answer);
-                    %> </p>
+                    %> <%= x[0].question %> </p>
 
 
 
