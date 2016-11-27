@@ -113,7 +113,8 @@
         <div class="col-md-10  text-center fh5co-heading animate-box col-lg-9 col-lg-offset-2">
                  <h3><b>Ask your nutritional supplement question and we'll search over 5000 documents for the right choice.</b></h3>
                  <hr>
-                 <h3>Answer:</h3><p>
+                 <div>
+                 <h3 style="padding: 10px;">Answer:</h3><p>
                     <% var x = JSON.stringify(answerText, ["question", "evidencelist", "value", "title", "text"]);
                       var y = JSON.parse(x);
                       console.dir(y);
@@ -132,6 +133,7 @@
                  </p>
 
                  <b> Confidence: <%= percentage.toFixed(0) + "%" %></b>
+               </div>
 
 
         </div>
