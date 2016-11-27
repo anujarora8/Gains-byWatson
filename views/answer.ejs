@@ -114,7 +114,7 @@
                     <% var x = JSON.stringify(answerText, ["question", "evidencelist", "value", "title", "text"]);
                       var y = JSON.parse(x);
                       console.dir(y);
-                      var test = y.question;
+                      var test = y.question.evidencelist[0].value;
                     %> <%= JSON.stringify(test,null) %>
 
 
