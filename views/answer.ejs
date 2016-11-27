@@ -112,8 +112,7 @@
                  <hr>
                  <h3>Answer:</h3><p> <%= JSON.stringify(answerText, ["question", "evidencelist", "value","title", "text"]) %>
                     <% var x = JSON.stringify(answerText, ["question", "evidencelist", "value", "title", "text"]);
-                      var y = JSON.parse(x);
-                      console.log("Object: %O",y);%>
+                      var y = JSON.parse(x);%> <%= JSON.stringify(y,null)%>
 
                  </p>
 
