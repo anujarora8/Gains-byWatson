@@ -115,11 +115,14 @@
                       var y = JSON.parse(x);
                       console.dir(y);
                       var test = y.question.evidencelist[0].text;
+                      var test2 = y.question.evidencelist[0].value;
+                      var test2 = double(test2)*100;
                     %> <%= JSON.stringify(test,null) %>
 
 
                  </p>
 
+                 <h3> Confidence: <%= JSON.stringify(test2,null)%>
 
 
         </div>
