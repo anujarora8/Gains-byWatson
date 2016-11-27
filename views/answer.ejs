@@ -94,8 +94,8 @@
               <form name="ask_watson"  method="post" action="/question">
 
 							         <div>
-                         <input type="text" class="form-control" style="background-color: white; padding: 12px 20px 12px 50px; background-image: url('images/search2.png'); background-size: 1.8em 1.8em;background-position: 10px 10px; background-repeat: no-repeat;"placeholder="<%= question %>" class = "icon-search" name="questionText" required>
-                         <button type="submit" class="btn-primary" style="float: right"value="click" >Ask</submit>
+                  <input type="text" class="form-control" style="background-color: white; padding: 12px 20px 12px 50px; background-image: url('images/search2.png'); background-size: 1.8em 1.8em;background-position: 10px 10px; background-repeat: no-repeat;"placeholder="<%= question %>" class = "icon-search" name="questionText" required>
+                  <button type="submit" class="btn-primary" style="float: right"value="click" >Ask</submit>
 
                       </div>
 
@@ -118,7 +118,11 @@
                       var y = JSON.parse(x);
                       console.dir(y);
                       var answer = y.question.evidencelist[0].text;
+                      var title = y.question.evidencelist[0].title;
                       var confidence = y.question.evidencelist[0].value;
+                    //  var test2 = double(test2)*100;
+                      var title = JSON.stringify(title,null);
+                      title.replace(/\"/g,"");
                     %>
                     <b><%= title%></b><br>
                     <%= JSON.stringify(answer,null) %>
