@@ -113,7 +113,10 @@
                  <h3>Answer:</h3><p> <%= JSON.stringify(answerText, ["question", "evidencelist", "value","title", "text"]) %>
                     <% var x = JSON.stringify(answerText, ["question", "evidencelist", "value", "title", "text"]);
                       var y = JSON.parse(x);
-                      console.dir(y);%>
+                      console.dir(y);
+                      var test = y.question;
+                    )%> <%= JSON.stringify(test,null) %>
+
 
                  </p>
 
