@@ -123,11 +123,12 @@
                     %>
                     <b><%= title%></b><br>
                     <%= JSON.stringify(answer,null) %>
-
+                    <% var percentage = Number(confidence);
+                      percentenage = percentage * 100;
 
                  </p>
 
-                 <b> Confidence: <%= JSON.stringify(confidence,null) + "%" %></b>
+                 <b> Confidence: <%= percentage + "%" %></b>
 
 
         </div>
