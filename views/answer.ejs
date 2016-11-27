@@ -92,9 +92,10 @@
 
             <div id = "searchbar" class="form-group has-feedback">
 
-              <form method="POST" action="/question">
+              <form name="ask_watson"  method="post" action="/question">
 
-                <input class="form-control" placeholder= "<%= question %>" class = "icon-search" type="text" />
+                <input class="form-control" placeholder= "<%= question %>" class = "icon-search" type="text" name="questionText" required>
+                <button type="submit" class="btn btn-primary btn-outline with-arrow" id="ask" value="click" >Ask!</button>
                 <br>
               </form>
 
