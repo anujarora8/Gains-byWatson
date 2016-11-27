@@ -118,11 +118,8 @@
                       var y = JSON.parse(x);
                       console.dir(y);
                       var answer = y.question.evidencelist[0].text;
-                      var title = y.question.evidencelist[0].title;
                       var confidence = y.question.evidencelist[0].value;
                     //  var test2 = double(test2)*100;
-                      var title = JSON.stringify(title,null);
-                      title.replace(/\"/g,"");
                     %>
                     <b><%= title%></b><br>
                     <%= JSON.stringify(answer,null) %>
@@ -131,7 +128,7 @@
                             %>
                  </p>
 
-                 <b> Confidence: <%= percentage.toFixed(0) + "%" %></b>
+                 <b><font color="#1B9BBF"> Confidence: <%= percentage.toFixed(0) + "%" %> </font></b>
 
 
         </div>
