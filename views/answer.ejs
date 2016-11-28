@@ -88,17 +88,19 @@
         <div class="row">
           <div class="col-md-12">
 
-            <div id = "searchbar" class="form-group has-feedback">
+            <div id = "searchbar" class="form-group has-feedback">s
 
-              <form name="ask_watson"  method="post" action="/question">
+              <h3> <strong>Question:</strong> "<%= question %>" </h3>
+              <a href="/search.html" class="btn-primary btn-outline" value="click" >Ask Another Question!</a>
+
+              <!-- <form name="ask_watson"  method="post" action="/question">
 
 							         <div>
-                  <input type="text" class="form-control" style="background-color: white; padding: 12px 20px 12px 50px; background-image: url('images/search2.png'); background-size: 1.8em 1.8em;background-position: 10px 10px; background-repeat: no-repeat;"placeholder="<%= question %>" class = "icon-search" name="questionText" required>
-                  <button type="submit" class="btn-primary" style="float: right"value="click" >Ask</submit>
+
 
                       </div>
 
-							</form>
+							</form> !-->
 
             </div>
 
@@ -113,7 +115,7 @@
                  <h3><b>Ask your nutritional supplement question and we'll search over 5000 documents for the right choice.</b></h3>
                  <hr>
                  <div>
-                 <h3 style="padding: 10px;">Answer:</h3><p>
+                 <h3 style="padding: -10px;">Answer:</h3><p>
                     <% var x = JSON.stringify(answerText, ["question", "evidencelist", "value", "title", "text"]);
                       var y = JSON.parse(x);
                       console.dir(y);
